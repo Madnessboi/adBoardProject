@@ -1,0 +1,16 @@
+<div class="recommendations">
+  <div class="container">
+    <h2 class="recommendations-title">Рекомендации для вас</h2>
+    <div class="recommendations-item__list">
+      @for (item of recommendations; track item.id) {
+      <a class="recommendations-item">
+        <img class="recommendations-item__image" [src]="item.image" [alt]="item.alt" />
+        <p class="recommendations-item__title">{{ item.title }}</p>
+        <p class="recommendations-item__price">{{ item.price }}</p>
+        <p class="recommendations-item__location">{{ item.location }}</p>
+        <p class="recommendations-item__publish-date">{{ item.publishDate }}</p>
+      </a>
+      }
+    </div>
+  </div>
+</div>

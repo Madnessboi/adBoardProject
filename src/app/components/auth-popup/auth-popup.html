@@ -1,0 +1,23 @@
+<div class="auth-popup">
+  <div class="popup-container">
+    <div class="auth-popup__header">
+      <!-- <p class="auth-popup__title">Авторизация</p> -->
+      <!-- <button class="auth-popup__close-btn">
+        <img src="assets/images/popup-close-icn.png" alt="closePopup" />
+      </button> -->
+    </div>
+    <div class="auth-popup__content">
+      <input pInputText type="text" placeholder="Номер телефона" />
+      <input pInputText type="text" placeholder="Пароль" />
+      <div class="auth-popup__data-actions">
+        <button class="auth-popup__remember-me-btn">
+          <p-checkBox [binary]="true" />
+          Запомнить меня
+        </button>
+        <a href="" class="auth-popup__access-restore">Забыли пароль?</a>
+      </div>
+    </div>
+
+    <p-button class="auth-popup__login-btn">Войти</p-button>
+  </div>
+</div>

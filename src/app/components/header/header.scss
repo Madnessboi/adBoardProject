@@ -1,7 +1,5 @@
-@import 'assets/styles/reset.scss';
-
-* {
-  font-family: 'Inter', sans-serif;
+.header {
+  margin-bottom: 32px;
 }
 
 button {
@@ -13,4 +11,9 @@ button {
   font-size: 14px;
   line-height: 20px;
   color: white;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1296px;
 }

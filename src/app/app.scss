@@ -1,0 +1,30 @@
+.container {
+  margin: 0 auto;
+  max-width: 1296px;
+}
+
+@media (max-width: 1399px) {
+  button {
+    font-size: 12px;
+  }
+
+  .container {
+    padding-inline: 8px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .container {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

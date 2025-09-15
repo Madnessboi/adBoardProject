@@ -1,0 +1,47 @@
+.popup-container {
+  margin: 0 auto;
+  width: 368px;
+}
+
+.auth-popup {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 24px;
+    color: black;
+  }
+
+  &__login-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__data-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__remember-me-btn {
+    background: none;
+    color: black;
+
+    cursor: pointer;
+  }
+
+  &__access-restore {
+    color: rgb(180, 178, 178);
+    text-decoration: none;
+    transition-duration: 0.3s;
+  }
+
+  &__access-restore:hover {
+    color: #285bae;
+  }
+}

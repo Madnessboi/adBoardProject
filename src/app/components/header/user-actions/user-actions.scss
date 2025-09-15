@@ -1,0 +1,78 @@
+.user-actions {
+  width: 100%;
+  height: 52px;
+  background-color: #1e293b;
+  margin-bottom: 24px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 24px;
+    height: 52px;
+  }
+
+  &__wrapper &__sign-in {
+    margin-left: -16px;
+  }
+
+  &__sign-in-icn,
+  &__sign-in {
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  &__sign-in:hover {
+    text-decoration: underline;
+  }
+
+  &__new-item-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    width: 179px;
+    height: 32px;
+    transition-duration: 0.3s;
+  }
+
+  &__new-item-btn:hover {
+    background-color: #285bae;
+    cursor: pointer;
+  }
+
+  &__new-item-btn-short {
+    display: none;
+    height: 28px;
+    transition-duration: 0.3s;
+  }
+
+  &__new-item-btn-short:hover {
+    cursor: pointer;
+    background-color: #285bae;
+  }
+}
+
+@media (max-width: 1199px) {
+  .user-actions__new-item-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    width: 179px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .user-actions__new-item-btn {
+    display: none;
+  }
+
+  .user-actions__new-item-btn-short {
+    width: 40px;
+    display: block;
+  }
+}
