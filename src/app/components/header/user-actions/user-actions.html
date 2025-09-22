@@ -1,17 +1,37 @@
 <div class="user-actions">
   <div class="container">
     <div class="user-actions__wrapper">
-      <a class="user-actions__sign-in-icn" href="#">
-        <img src="assets/images/sign-in_icon.png" alt="signInIcon" />
-      </a>
-      <a (click)="show()" class="user-actions__sign-in" href="#">Войти</a>
-      <button class="user-actions__new-item-btn">
+      @if (!isAuthorized()) {
+      <div class="user-actions__sign-in">
+        <a (click)="show()" class="user-actions__sign-in-icn">
+          <img src="assets/images/sign-in_icon.png" alt="signInIcon" />
+        </a>
+        <a (click)="show()" class="user-actions__sign-in-btn">Войти</a>
+      </div>
+      <button (click)="show()" class="user-actions__new-item-btn">
         Новое объявление
         <img src="assets/images/new-item_icon.png" alt="" />
       </button>
+      <button (click)="show()" class="user-actions__new-item-btn-short">
+        <img src="assets/images/new-item_icon.png" alt="" />
+      </button>
+
+      } @else {
+      <div class="user-actions__sign-in">
+        <a (click)="menu.toggle($event)" class="user-actions__sign-in-icn">
+          <img src="assets/images/sign-in_icon.png" alt="signInIcon" />
+        </a>
+        <a (click)="menu.toggle($event)" class="user-actions__authorized">Никита</a>
+        <p-menu #menu [model]="menuItems" [popup]="true"></p-menu>
+        <button class="user-actions__new-item-btn">
+          Новое объявление
+          <img src="assets/images/new-item_icon.png" alt="" />
+        </button>
+      </div>
       <button class="user-actions__new-item-btn-short">
         <img src="assets/images/new-item_icon.png" alt="" />
       </button>
+      }
     </div>
   </div>
 </div>

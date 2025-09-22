@@ -1,0 +1,72 @@
+.advertisement-item {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+  }
+  &__title {
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+    margin: 0;
+    flex: 1;
+  }
+  &__price {
+    font-size: 28px;
+    font-weight: 700;
+    color: black;
+    margin: 0;
+    margin-left: 20px;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__image {
+    width: 856px;
+    height: 512px;
+
+    object-fit: cover;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__show-phone-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 416px;
+    height: 68px;
+    font-size: 20px;
+    transition-duration: 0.3s;
+    margin-bottom: 40px;
+  }
+
+  &__show-phone-btn:hover {
+    background-color: #285bae;
+    cursor: pointer;
+  }
+
+  &__location-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  &__location {
+    margin-bottom: 60px;
+  }
+
+  &__description-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+}

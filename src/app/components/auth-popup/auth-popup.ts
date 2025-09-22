@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { CheckboxModule } from 'primeng/checkbox';
+import { DynamicDialogRef } from 'primeng/dynamicdialog';
 
 @Component({
   selector: 'app-auth-popup',
@@ -9,4 +10,9 @@ import { CheckboxModule } from 'primeng/checkbox';
   templateUrl: './auth-popup.html',
   styleUrls: ['./auth-popup.scss'],
 })
-export class AuthPopupComponent {}
+export class AuthPopupComponent {
+  private dialogRef = inject(DynamicDialogRef);
+  login() {
+    this.dialogRef.close(true);
+  }
+}

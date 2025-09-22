@@ -13,11 +13,17 @@
   }
 
   &__wrapper &__sign-in {
-    margin-left: -16px;
+  }
+
+  &__sign-in {
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 
   &__sign-in-icn,
-  &__sign-in {
+  &__authorized,
+  &__sign-in-btn {
     font-family: 'Inter', sans-serif;
     text-decoration: none;
     color: white;
@@ -25,7 +31,7 @@
   }
 
   &__sign-in:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   &__new-item-btn {

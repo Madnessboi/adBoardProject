@@ -5,6 +5,7 @@ export interface RecommendationItem {
   price: string;
   location: string;
   publishDate: string;
+  details: string;
   alt: string;
 }
 
@@ -16,6 +17,7 @@ export const mockRecommendations: RecommendationItem[] = [
     price: '20 000 Р',
     location: 'Москва, Ленинский проспект',
     publishDate: 'Сегодня 14:12',
+    details: 'Это подробное описание товара!',
     alt: 'adPicture',
   },
   {
@@ -25,6 +27,7 @@ export const mockRecommendations: RecommendationItem[] = [
     price: '75 999 Р',
     location: 'Казань, Ленинский проспект',
     publishDate: 'Вчера 09:02',
+    details: 'Это подробное описание товара!',
     alt: 'adPicture',
   },
   {
@@ -34,6 +37,7 @@ export const mockRecommendations: RecommendationItem[] = [
     price: '560 Р',
     location: 'Севастополь',
     publishDate: 'Сегодня 18:20',
+    details: 'Это подробное описание товара!',
     alt: 'adPicture',
   },
   {
@@ -43,6 +47,7 @@ export const mockRecommendations: RecommendationItem[] = [
     price: '20 000 Р',
     location: 'Москва, Ленинский проспект',
     publishDate: 'Сегодня 14:12',
+    details: 'Это подробное описание товара!',
     alt: 'adPicture',
   },
   {
@@ -52,6 +57,7 @@ export const mockRecommendations: RecommendationItem[] = [
     price: '75 999 Р',
     location: 'Казань, Ленинский проспект',
     publishDate: 'Вчера 09:02',
+    details: 'Это подробное описание товара!',
     alt: 'adPicture',
   },
   {
@@ -61,6 +67,7 @@ export const mockRecommendations: RecommendationItem[] = [
     price: '560 Р',
     location: 'Севастополь',
     publishDate: 'Сегодня 18:20',
+    details: 'Это подробное описание товара!',
     alt: 'adPicture',
   },
   {
@@ -70,6 +77,7 @@ export const mockRecommendations: RecommendationItem[] = [
     price: '20 000 Р',
     location: 'Москва, Ленинский проспект',
     publishDate: 'Сегодня 14:12',
+    details: 'Это подробное описание товара!',
     alt: 'adPicture',
   },
   {
@@ -79,6 +87,7 @@ export const mockRecommendations: RecommendationItem[] = [
     price: '75 999 Р',
     location: 'Казань, Ленинский проспект',
     publishDate: 'Вчера 09:02',
+    details: 'Это подробное описание товара!',
     alt: 'adPicture',
   },
   {
@@ -88,6 +97,7 @@ export const mockRecommendations: RecommendationItem[] = [
     price: '560 Р',
     location: 'Севастополь',
     publishDate: 'Сегодня 18:20',
+    details: 'Это подробное описание товара!',
     alt: 'adPicture',
   },
   {
@@ -97,6 +107,7 @@ export const mockRecommendations: RecommendationItem[] = [
     price: '20 000 Р',
     location: 'Москва, Ленинский проспект',
     publishDate: 'Сегодня 14:12',
+    details: 'Это подробное описание товара!',
     alt: 'adPicture',
   },
   {
@@ -106,6 +117,7 @@ export const mockRecommendations: RecommendationItem[] = [
     price: '75 999 Р',
     location: 'Казань, Ленинский проспект',
     publishDate: 'Вчера 09:02',
+    details: 'Это подробное описание товара!',
     alt: 'adPicture',
   },
   {
@@ -115,6 +127,7 @@ export const mockRecommendations: RecommendationItem[] = [
     price: '560 Р',
     location: 'Севастополь',
     publishDate: 'Сегодня 18:20',
+    details: 'Это подробное описание товара!',
     alt: 'adPicture',
   },
   {
@@ -124,6 +137,7 @@ export const mockRecommendations: RecommendationItem[] = [
     price: '20 000 Р',
     location: 'Москва, Ленинский проспект',
     publishDate: 'Сегодня 14:12',
+    details: 'Это подробное описание товара!',
     alt: 'adPicture',
   },
   {
@@ -133,6 +147,7 @@ export const mockRecommendations: RecommendationItem[] = [
     price: '75 999 Р',
     location: 'Казань, Ленинский проспект',
     publishDate: 'Вчера 09:02',
+    details: 'Это подробное описание товара!',
     alt: 'adPicture',
   },
   {
@@ -142,6 +157,7 @@ export const mockRecommendations: RecommendationItem[] = [
     price: '560 Р',
     location: 'Севастополь',
     publishDate: 'Сегодня 18:20',
+    details: 'Это подробное описание товара!',
     alt: 'adPicture',
   },
   {
@@ -151,6 +167,7 @@ export const mockRecommendations: RecommendationItem[] = [
     price: '20 000 Р',
     location: 'Москва, Ленинский проспект',
     publishDate: 'Сегодня 14:12',
+    details: 'Это подробное описание товара!',
     alt: 'adPicture',
   },
 ];

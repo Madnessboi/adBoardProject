@@ -1,0 +1,32 @@
+<div class="advertisement-item">
+  @if (item) {
+  <div class="container">
+    <div class="advertisement-item__header">
+      <h1 class="advertisement-item__title">{{ item.title }}</h1>
+      <p class="advertisement-item__price">
+        {{ item.price }}
+      </p>
+    </div>
+    <div class="advertisement-item__info">
+      <img class="advertisement-item__image" [src]="item.image" [alt]="item.title" />
+      <div class="advertisement-item__details">
+        <button class="advertisement-item__show-phone-btn">
+          <img src="assets/images/phone-btn-icn.png" />
+          Показать номер телефона
+        </button>
+        <!-- <span class="category">{{ item.category }}</span> -->
+        <p class="advertisement-item__location-title">Адрес</p>
+        <span class="advertisement-item__location">{{ item.location }}</span>
+        <!-- <span class="advertisement-item__date">{{ item.publishDate }}</span> -->
+
+        <h3 class="advertisement-item__description-title">Описание</h3>
+        <p class="advertisement-item__description">{{ item.details }}</p>
+      </div>
+    </div>
+  </div>
+  } @else {
+  <div class="not-found">
+    <h2>Объявление не найдено</h2>
+  </div>
+  }
+</div>
