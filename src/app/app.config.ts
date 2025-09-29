@@ -10,6 +10,8 @@ import Aura from '@primeuix/themes/aura';
 import { palette, definePreset } from '@primeuix/themes';
 
 import { routes } from './app.routes';
+import { provideHttpClient, withInterceptors } from '@angular/common/http';
+// import { authInterceptor } from '../app/interceptors/auth.interceptor';
 
 const AuraBlue = definePreset(Aura, {
   semantic: {
@@ -22,6 +24,7 @@ export const appConfig: ApplicationConfig = {
     provideBrowserGlobalErrorListeners(),
     provideZonelessChangeDetection(),
     provideRouter(routes),
+    provideHttpClient(),
     provideAnimationsAsync(),
     providePrimeNG({
       theme: {

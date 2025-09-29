@@ -1,29 +1,33 @@
 import { Component, inject, OnInit } from '@angular/core';
-import {
-  mockRecommendations,
-  RecommendationItem,
-} from '../recommendations-list/recommendations-list.constants';
-import { ActivatedRoute, Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
+import { Observable, switchMap } from 'rxjs';
+import { AdvertisementService } from '../../services/ads.service';
+import { Advertisement } from '../../models/ads.model';
+import { LazyImageDirective } from '../../directives/lazy-image.directive';
 
 @Component({
   selector: 'app-advertisement-item',
-  imports: [CommonModule],
+  imports: [CommonModule, LazyImageDirective],
   templateUrl: './advertisement-item.html',
   styleUrl: './advertisement-item.scss',
 })
 export class AdvertisementItemComponent implements OnInit {
-  recommendations: RecommendationItem[] = mockRecommendations;
-  item: RecommendationItem | undefined;
-  public route = inject(ActivatedRoute);
+  private adsService = inject(AdvertisementService);
+  private route = inject(ActivatedRoute);
+
+  advertisement$!: Observable<Advertisement>;
 
   ngOnInit(): void {
-    this.route.params.subscribe((params) => {
-      const id = +params['id'];
-      this.item = this.recommendations.find((rec) => rec.id === id);
-      if (!this.item) {
-        console.error('Ничего не найдено');
-      }
-    });
+    this.advertisement$ = this.route.params.pipe(
+      switchMap((params) => {
+        const id = params['id'];
+        return this.adsService.getAdvertisementById(id);
+      })
+    );
+  }
+
+  formatPrice(price: number): string {
+    return this.adsService.formatPrice(price);
   }
 }

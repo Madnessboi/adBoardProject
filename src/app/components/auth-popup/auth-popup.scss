@@ -20,6 +20,7 @@
   &__login-btn {
     display: flex;
     justify-content: center;
+    margin-bottom: 15px;
   }
 
   &__data-actions {
@@ -43,5 +44,12 @@
 
   &__access-restore:hover {
     color: #285bae;
+  }
+
+  &__register-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3b82f6;
   }
 }
